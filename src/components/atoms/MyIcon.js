@@ -5,10 +5,10 @@ export const MyIcon = ({ size }) => {
   return (
     <Avatar
       size={size}
-      name={"アイコン"}
+      name="アイコン"
       round
-      color={"#ddd"}
-      alt={"アイコン"}
+      color="#ddd"
+      alt="アイコン"
       src={icon}
     />
   );
