@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HomePage } from "./components/pages/HomePage";
+import { createGlobalStyle } from "styled-components";
+import normalize from "styled-normalize";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle />
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+        </Switch>
+      </BrowserRouter>
+    </>
   );
 }
 
-export default App;
+const GlobalStyle = createGlobalStyle`
+  ${normalize}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+  }
+  
+  html {
+    font-family: "M PLUS 1p", sans-serif;
+    font-size: 16px;
+    line-height: 2.0;
+    color: #424242;
+  }
+`;
