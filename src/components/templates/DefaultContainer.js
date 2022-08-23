@@ -21,4 +21,5 @@ const MainWrapper = styled.div`
   display: flex;
   border: #478dc0 20px solid;
   padding: 60px;
+  margin: 30px;
 `;
