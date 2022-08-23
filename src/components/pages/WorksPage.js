@@ -1,13 +1,24 @@
 import { DefaultContainer } from "../templates/DefaultContainer";
 import styled from "styled-components";
+import { CategoryItemList } from "../molecules/CategoryItemList";
 
 export const WorksPage = () => {
-  const kinds = ["Minecraft", "画像処理", "モバイルアプリ", "その他"];
   return (
     <DefaultContainer title={"Work"}>
-      <Wrapper></Wrapper>
+      <Wrapper>
+        <Left>
+          <CategoryItemList />
+        </Left>
+      </Wrapper>
     </DefaultContainer>
   );
 };
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  display: flex;
+`;
+
+const Left = styled.div`
+  padding-right: 30px;
+  border-right: #000 solid 2px;
+`;

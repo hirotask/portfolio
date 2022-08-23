@@ -2,7 +2,6 @@
  * Headerにある一個一個の要素
  */
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export const HeaderItem = ({ title, link }) => {
   return (
