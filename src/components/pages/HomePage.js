@@ -16,11 +16,12 @@ export const HomePage = () => {
 const Wrapper = styled.div`
   display: flex;
   margin: 150px 0;
+  text-align: center;
 `;
 
 const Title = styled.h1`
   font-family: "Shadows Into Light", cursive;
   font-size: 128px;
   font-weight: bold;
-  margin-left: 120px;
+  margin-left: 150px;
 `;
