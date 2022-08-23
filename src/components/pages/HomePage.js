@@ -1,9 +1,10 @@
 import { DefaultContainer } from "../templates/DefaultContainer";
+import { MyIcon } from "../atoms/MyIcon";
 
 export const HomePage = () => {
   return (
-    <DefaultContainer>
-      <h1>Hello World</h1>
+    <DefaultContainer title="Home">
+      <MyIcon size={350} />
     </DefaultContainer>
   );
 };
