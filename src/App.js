@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { HomePage } from "./components/pages/HomePage";
 import { createGlobalStyle } from "styled-components";
 import normalize from "styled-normalize";
+import { AboutPage } from "./components/pages/AboutPage";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={HomePage} />
+          <Route path="/about" component={AboutPage} />
         </Switch>
       </BrowserRouter>
     </>
@@ -30,11 +32,11 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   body {
-    background-color: #f5f5f5;
+    background-color: #f1f1f1;
   }
-  
+
   html {
     font-family: 'Shadows Into Light', sans-serif;
     font-size: 16px;
