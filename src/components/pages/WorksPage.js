@@ -9,6 +9,7 @@ export const WorksPage = () => {
         <Left>
           <CategoryItemList />
         </Left>
+        <Right></Right>
       </Wrapper>
     </DefaultContainer>
   );
@@ -19,6 +20,8 @@ const Wrapper = styled.div`
 `;
 
 const Left = styled.div`
-  padding-right: 30px;
   border-right: #000 solid 2px;
+  padding: 20px 30px 20px 0;
 `;
+
+const Right = styled.div``;
