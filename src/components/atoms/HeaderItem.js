@@ -14,9 +14,10 @@ export const HeaderItem = ({ title, link }) => {
 
 const Item = styled.li`
   transform: rotate(-20deg);
+  color: #5a5a5a;
   border-bottom: 1px solid #000;
   list-style-type: none;
-  font-size: 36px;
+  font-size: 48px;
   text-decoration: none;
   font-weight: bold;
 `;
