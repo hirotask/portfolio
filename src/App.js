@@ -4,6 +4,8 @@ import { HomePage } from "./components/pages/HomePage";
 import { createGlobalStyle } from "styled-components";
 import normalize from "styled-normalize";
 import { AboutPage } from "./components/pages/AboutPage";
+import { WorkPage } from "./components/pages/WorkPage";
+import { ContactPage } from "./components/pages/ContactPage";
 
 export default function App() {
   return (
@@ -19,6 +21,8 @@ export default function App() {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/about" component={AboutPage} />
+          <Route path="/work" component={WorkPage} />
+          <Route path="/contact" component={ContactPage} />
         </Switch>
       </BrowserRouter>
     </>
@@ -38,8 +42,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html {
-    font-family: 'Shadows Into Light', sans-serif;
-    font-size: 16px;
+    font-family: "BIZ UDゴシック",sans-serif;
+    font-size: 18px;
     line-height: 2.0;
     color: #424242;
   }

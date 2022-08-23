@@ -5,9 +5,9 @@ export const HeaderItemList = () => {
   return (
     <Wrapper>
       <HeaderItem title="Home" link="/" />
-      <HeaderItem title="About" link="/" />
-      <HeaderItem title="Work" link="/" />
-      <HeaderItem title="Contact" link="/" />
+      <HeaderItem title="About" link="/about" />
+      <HeaderItem title="Work" link="/work" />
+      <HeaderItem title="Contact" link="/contact" />
     </Wrapper>
   );
 };

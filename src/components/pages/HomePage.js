@@ -19,6 +19,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h1`
+  font-family: "Shadows Into Light", cursive;
   font-size: 128px;
   font-weight: bold;
   margin-left: 120px;

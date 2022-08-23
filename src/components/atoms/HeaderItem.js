@@ -20,6 +20,7 @@ const Item = styled.li`
   font-size: 48px;
   text-decoration: none;
   font-weight: bold;
+  font-family: "Shadows Into Light", cursive;
 `;
 
 const ItemLink = styled.a`
