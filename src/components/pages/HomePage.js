@@ -5,6 +5,7 @@ export const HomePage = () => {
   return (
     <DefaultContainer title="Home">
       <MyIcon size={350} />
+      <h1>Hiroto Hashi</h1>
     </DefaultContainer>
   );
 };

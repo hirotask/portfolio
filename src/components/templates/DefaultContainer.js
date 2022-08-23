@@ -3,6 +3,7 @@
  */
 import styled from "styled-components";
 import { useEffect } from "react";
+import { Header } from "../organisms/Header";
 
 export const DefaultContainer = ({ children, title }) => {
   useEffect(() => {
@@ -14,12 +15,17 @@ export const DefaultContainer = ({ children, title }) => {
     document.title = `${title} | Hirotask Portfolio`;
   }, [title]);
 
-  return <MainWrapper>{children}</MainWrapper>;
+  return (
+    <MainWrapper>
+      <Header />
+      {children}
+    </MainWrapper>
+  );
 };
 
 const MainWrapper = styled.div`
-  display: flex;
+  max-width: 1440px;
   border: #478dc0 20px solid;
-  padding: 60px;
-  margin: 30px;
+  padding: 60px 120px;
+  margin: 60px auto;
 `;
