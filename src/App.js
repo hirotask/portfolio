@@ -4,7 +4,7 @@ import { HomePage } from "./components/pages/HomePage";
 import { createGlobalStyle } from "styled-components";
 import normalize from "styled-normalize";
 import { AboutPage } from "./components/pages/AboutPage";
-import { WorkPage } from "./components/pages/WorkPage";
+import { WorksPage } from "./components/pages/WorksPage";
 import { ContactPage } from "./components/pages/ContactPage";
 
 export default function App() {
@@ -15,7 +15,7 @@ export default function App() {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/about" component={AboutPage} />
-          <Route path="/work" component={WorkPage} />
+          <Route path="/works" component={WorksPage} />
           <Route path="/contact" component={ContactPage} />
         </Switch>
       </BrowserRouter>

@@ -6,7 +6,7 @@ export const HeaderItemList = () => {
     <Wrapper>
       <HeaderItem title="Home" link="/" />
       <HeaderItem title="About" link="/about" />
-      <HeaderItem title="Work" link="/work" />
+      <HeaderItem title="Works" link="/works" />
       <HeaderItem title="Contact" link="/contact" />
     </Wrapper>
   );
