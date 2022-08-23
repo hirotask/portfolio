@@ -15,7 +15,7 @@ export const HomePage = () => {
 
 const Wrapper = styled.div`
   display: flex;
-  margin: 80px 0;
+  margin: 150px 0;
 `;
 
 const Title = styled.h1`
