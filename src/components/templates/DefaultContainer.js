@@ -25,8 +25,8 @@ export const DefaultContainer = ({ children, title }) => {
 
 const MainWrapper = styled.div`
   max-width: 1440px;
-  max-height: 100vh;
+  min-height: 90vh;
   border: #478dc0 20px solid;
   padding: 60px 120px;
-  margin: 60px auto;
+  margin: 40px auto;
 `;

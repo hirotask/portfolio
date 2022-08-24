@@ -15,7 +15,7 @@ export const HomePage = () => {
 
 const Wrapper = styled.div`
   display: flex;
-  margin: 150px 0;
+  margin: 100px 0;
   text-align: center;
 `;
 

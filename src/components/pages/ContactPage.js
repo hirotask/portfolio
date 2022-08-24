@@ -12,13 +12,13 @@ export const ContactPage = () => {
         <MyIcon size={300} />
         <Title>FOLLOW ME</Title>
         <IconLink href={"https://github.com/hirotask"}>
-          <GitHubIcon sx={{ fontSize: "100px" }} />
+          <GitHubIcon sx={{ fontSize: "70px", margin: "0" }} />
         </IconLink>
         <IconLink href={"https://twitter.com/Hirotask_"}>
-          <TwitterIcon sx={{ fontSize: "100px" }} />
+          <TwitterIcon sx={{ fontSize: "70px", margin: "0" }} />
         </IconLink>
         <IconLink href={"https://www.instagram.com/hirotask_/?hl=ja"}>
-          <InstagramIcon sx={{ fontSize: "100px" }} />
+          <InstagramIcon sx={{ fontSize: "70px", margin: "0" }} />
         </IconLink>
       </Wrapper>
     </DefaultContainer>
@@ -27,11 +27,13 @@ export const ContactPage = () => {
 
 const Wrapper = styled.div`
   text-align: center;
+  margin: 0;
+  padding: 0;
 `;
 
 const Title = styled.h1`
   font-family: "Shadows Into Light", cursive;
-  font-size: 128px;
+  font-size: 80px;
   font-weight: bold;
   margin: 0;
   padding: 0;
