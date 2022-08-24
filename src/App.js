@@ -13,10 +13,10 @@ export default function App() {
       <GlobalStyle />
       <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/about" component={AboutPage} />
-          <Route path="/works" component={WorksPage} />
-          <Route path="/contact" component={ContactPage} />
+          <Route exact path="/portfolio/" component={HomePage} />
+          <Route path="/portfolio/about" component={AboutPage} />
+          <Route path="/portfolio/works" component={WorksPage} />
+          <Route path="/portfolio/contact" component={ContactPage} />
         </Switch>
       </BrowserRouter>
     </>
