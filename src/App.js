@@ -11,12 +11,12 @@ export default function App() {
   return (
     <>
       <GlobalStyle />
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
-          <Route exact path="/portfolio/" component={HomePage} />
-          <Route path="/portfolio/about" component={AboutPage} />
-          <Route path="/portfolio/works" component={WorksPage} />
-          <Route path="/portfolio/contact" component={ContactPage} />
+          <Route exact path="/" component={HomePage} />
+          <Route path="/about" component={AboutPage} />
+          <Route path="/works" component={WorksPage} />
+          <Route path="/contact" component={ContactPage} />
         </Switch>
       </BrowserRouter>
     </>

@@ -4,10 +4,10 @@ import styled from "styled-components";
 export const HeaderItemList = () => {
   return (
     <Wrapper>
-      <HeaderItem title="Home" link="/portfolio/" />
-      <HeaderItem title="About" link="/portfolio/about" />
-      <HeaderItem title="Works" link="/portfolio/works" />
-      <HeaderItem title="Contact" link="/portfolio/contact" />
+      <HeaderItem title="Home" link="/" />
+      <HeaderItem title="About" link="/about" />
+      <HeaderItem title="Works" link="/works" />
+      <HeaderItem title="Contact" link="/contact" />
     </Wrapper>
   );
 };
