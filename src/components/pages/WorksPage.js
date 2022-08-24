@@ -1,8 +1,7 @@
 import { DefaultContainer } from "../templates/DefaultContainer";
 import styled from "styled-components";
 import { CategoryItemList } from "../molecules/CategoryItemList";
-import { WorksCard } from "../atoms/WorksCard";
-import icon from "../../assets/img/myicon.png";
+import { WorksCarousel } from "../organisms/WorksCarousel";
 
 export const WorksPage = () => {
   return (
@@ -12,16 +11,7 @@ export const WorksPage = () => {
           <CategoryItemList />
         </Left>
         <Right>
-          <WorksCard
-            imgSrc={icon}
-            title={"アイコン"}
-            description={"これはアイコンです"}
-          ></WorksCard>
-          <WorksCard
-            imgSrc={icon}
-            title={"アイコン"}
-            description={"これはアイコンです"}
-          ></WorksCard>
+          <WorksCarousel />
         </Right>
       </Wrapper>
     </DefaultContainer>
@@ -38,6 +28,5 @@ const Left = styled.div`
 `;
 
 const Right = styled.div`
-  display: flex;
   margin-left: 50px;
 `;

@@ -8,24 +8,18 @@ import styled from "styled-components";
 
 export const WorksCard = ({ imgSrc, title, description, onClickAction }) => {
   return (
-    <Wrapper>
-      <Card sx={{ minWidth: 350, minHeight: 450 }} onClick={onClickAction}>
-        <CardActionArea>
-          <CardMedia component="img" height="140" image={imgSrc} />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              {title}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {description}
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-      </Card>
-    </Wrapper>
+    <Card sx={{ minWidth: 300, maxWidth: 350, height: 450 }}>
+      <CardActionArea onClick={onClickAction}>
+        <CardMedia component="img" height="140" image={imgSrc} />
+        <CardContent>
+          <Typography gutterBottom height={50} variant="h5" component="div">
+            {title}
+          </Typography>
+          <Typography variant="body2" height={260} color="text.secondary">
+            {description}
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
   );
 };
-
-const Wrapper = styled.div`
-  margin-right: 40px;
-`;
