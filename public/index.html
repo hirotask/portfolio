@@ -33,9 +33,17 @@
     <script>
       const path = sessionStorage.getItem('path');
       console.log(path);
-      if (path && path === '/react-from-meta-lang/other') {
+      if (path && path === '/portfolio/about') {
         sessionStorage.removeItem('path');
-        window.history.replaceState(null, null, './other');
+        window.history.replaceState(null, null, './about');
+      }
+      if (path && path === '/portfolio/works') {
+        sessionStorage.removeItem('path');
+        window.history.replaceState(null, null, './works');
+      }
+      if (path && path === '/portfolio/contact') {
+        sessionStorage.removeItem('path');
+        window.history.replaceState(null, null, './contact');
       }
     </script>
     <title>React App</title>
