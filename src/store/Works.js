@@ -2,6 +2,7 @@ import WorkCategory from "../util/WorkCategory";
 import tech10 from "../assets/img/tech10.jpg";
 import germany from "../assets/img/germany.JPG";
 import act from "../assets/img/act.jpg";
+import portfolio from "../assets/img/portfolio.png"
 
 const Works = [
     {
@@ -15,6 +16,12 @@ const Works = [
         imgSrc: act,
         title: "演劇サークル長経験",
         description: "大学在学中は演劇サークルに所属し、サークル長を務めていました。"
+    },
+    {
+        category: WorkCategory.OTHERS,
+        imgSrc: portfolio,
+        title: "ポートフォリオの作成",
+        description: "Reactを用いてポートフォリオの作成を行いました。ワイヤーフレーム作成はFigmaを利用しました。状態管理に苦労しましたが、なんとか完成させることができました。"
     },
     {
         category: WorkCategory.MOBILE_APPS,
