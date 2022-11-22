@@ -1,22 +1,12 @@
 import { DefaultContainer } from "../templates/DefaultContainer";
 import styled from "styled-components";
-import icon from "../../assets/img/myicon.png";
 import { CategoryItemList } from "../molecules/CategoryItemList";
 import { WorksCarousel } from "../organisms/WorksCarousel";
 import {useState} from "react";
-import WorkCategory from "../../util/WorkCategory";
+import Works from "../../store/Works";
 
 export const WorksPage = () => {
   const [categoryIdx, setCategoryIdx] = useState(0);
-
-  const workList = [
-    {
-      category: WorkCategory.MOBILE_APPS,
-      imgSrc: icon,
-      title: "東北Tech道場10周年イベント",
-      description: "aaaaa"
-    }
-  ]
 
   return (
     <DefaultContainer title={"Work"}>
@@ -25,7 +15,7 @@ export const WorksPage = () => {
           <CategoryItemList setCategoryIdx={setCategoryIdx} />
         </Left>
         <Right>
-          <WorksCarousel categoryIdx={categoryIdx} workList={workList}/>
+          <WorksCarousel categoryIdx={categoryIdx} workList={Works}/>
         </Right>
       </Wrapper>
     </DefaultContainer>

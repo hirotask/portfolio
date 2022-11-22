@@ -27,7 +27,7 @@ export const WorksCarousel = ({categoryIdx, workList}) => {
                         work.category === categoryIdx ? (
                             <WorksCard
                                 key={idx}
-                                imgSrc={work.icon}
+                                imgSrc={work.imgSrc}
                                 title={work.title}
                                 description={work.description}
                             />
@@ -44,7 +44,7 @@ export const WorksCarousel = ({categoryIdx, workList}) => {
             <Wrapper>
                 {workList[0].category === categoryIdx ? (
                     <WorksCard
-                        imgSrc={workList[0].icon}
+                        imgSrc={workList[0].imgSrc}
                         title={workList[0].title}
                         description={workList[0].description}
                     />
