@@ -6,7 +6,6 @@ import normalize from "styled-normalize";
 import { AboutPage } from "./components/pages/AboutPage";
 import { WorksPage } from "./components/pages/WorksPage";
 import { ContactPage } from "./components/pages/ContactPage";
-import { WorksCarousel } from "./components/organisms/WorksCarousel";
 
 export default function App() {
   return (
@@ -18,7 +17,6 @@ export default function App() {
           <Route path="/about" component={AboutPage} />
           <Route path="/works" component={WorksPage} />
           <Route path="/contact" component={ContactPage} />
-          <Route path="/test" component={WorksCarousel} />
         </Switch>
       </BrowserRouter>
     </>

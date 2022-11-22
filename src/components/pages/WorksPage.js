@@ -2,8 +2,9 @@ import { DefaultContainer } from "../templates/DefaultContainer";
 import styled from "styled-components";
 import { CategoryItemList } from "../molecules/CategoryItemList";
 import { WorksCarousel } from "../organisms/WorksCarousel";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Works from "../../store/Works";
+
 
 export const WorksPage = () => {
   const [categoryIdx, setCategoryIdx] = useState(0);
@@ -11,9 +12,9 @@ export const WorksPage = () => {
   return (
     <DefaultContainer title={"Work"}>
       <Wrapper>
-        <Left>
-          <CategoryItemList setCategoryIdx={setCategoryIdx} />
-        </Left>
+        {/*<Left>*/}
+        {/*  <CategoryItemList setCategoryIdx={setCategoryIdx} />*/}
+        {/*</Left>*/}
         <Right>
           <WorksCarousel categoryIdx={categoryIdx} workList={Works}/>
         </Right>

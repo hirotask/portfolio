@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
 
-export const WorksCarousel = ({categoryIdx, workList}) => {
+export const WorksCarousel = ({workList}) => {
     const settings = {
         autoplay: true,
         dots: true,
@@ -24,16 +24,12 @@ export const WorksCarousel = ({categoryIdx, workList}) => {
             <Wrapper>
                 <Slick {...settings}>
                     {workList.map((work, idx) =>
-                        work.category === categoryIdx ? (
-                            <WorksCard
-                                key={idx}
-                                imgSrc={work.imgSrc}
-                                title={work.title}
-                                description={work.description}
-                            />
-                        ) : (
-                            <></>
-                        )
+                        <WorksCard
+                            key={work.title + idx}
+                            imgSrc={work.imgSrc}
+                            title={work.title}
+                            description={work.description}
+                        />
                     )}
                 </Slick>
             </Wrapper>
@@ -42,15 +38,12 @@ export const WorksCarousel = ({categoryIdx, workList}) => {
     } else if (workList.length === 1) {
         return (
             <Wrapper>
-                {workList[0].category === categoryIdx ? (
-                    <WorksCard
-                        imgSrc={workList[0].imgSrc}
-                        title={workList[0].title}
-                        description={workList[0].description}
-                    />
-                ) : (
-                    <></>
-                )}
+                <WorksCard
+                    imgSrc={workList[0].imgSrc}
+                    title={workList[0].title}
+                    description={workList[0].description}
+                />
+
             </Wrapper>
         )
     } else {
