@@ -1,12 +1,30 @@
 import { CategoryItem } from "../atoms/CategoryItem";
+import WorkCategory from "../../util/WorkCategory";
 
-export const CategoryItemList = () => {
-  const categories = ["Minecraft", "画像処理", "モバイルアプリ", "その他"];
+export const CategoryItemList = ({ setCategoryIdx }) => {
+  const categories = [
+    {
+      category: WorkCategory.MINECRAFT,
+      text: "Minecraft"
+    },
+    {
+      category: WorkCategory.COMPUTER_SCIENCE,
+      text: "コンピュータサイエンス"
+    },
+    {
+      category: WorkCategory.MOBILE_APPS,
+      text: "モバイルアプリ"
+    },
+    {
+      category: WorkCategory.OTHERS,
+      text: "その他"
+    }
+  ];
 
   return (
     <>
       {categories.map((cat, idx) => (
-        <CategoryItem text={cat} key={idx}></CategoryItem>
+        <CategoryItem category={cat.category} text={cat.text} key={idx} setCategoryIdx={setCategoryIdx}></CategoryItem>
       ))}
     </>
   );

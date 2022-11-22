@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
 
-export const WorksCarousel = () => {
+export const WorksCarousel = ({ categoryIdx, workList }) => {
   const settings = {
     autoplay: true,
     dots: true,
