@@ -11,7 +11,7 @@ export const WorksCard = ({ imgSrc, title, description, onClickAction }) => {
       <CardActionArea onClick={onClickAction}>
         <CardMedia component="img" height="140" image={imgSrc} src={'picture'}/>
         <CardContent>
-          <Typography gutterBottom height={50} variant="h5" component="div" marginBottom={3}>
+          <Typography gutterBottom height={50} variant="h5" component="div" marginBottom={5}>
             {title}
           </Typography>
           <Typography variant="body1" height={260} color="text.secondary">
