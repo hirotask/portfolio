@@ -1,15 +1,12 @@
 import styled from "styled-components";
-import {Box} from "@mui/material";
 
 export const CategoryItem = ({category, text, setCategoryIdx}) => {
     return (
-        <Box onClick={() => {
-            setCategoryIdx(category);
-        }}>
-            <CategoryItemText>
-                <p>{text}</p>
-            </CategoryItemText>
-        </Box>
+        <CategoryItemText >
+            <p onClick={() => {
+                setCategoryIdx(category);
+            }}>{text}</p>
+        </CategoryItemText>
 
     );
 };

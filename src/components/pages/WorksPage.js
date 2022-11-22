@@ -1,8 +1,9 @@
 import { DefaultContainer } from "../templates/DefaultContainer";
 import styled from "styled-components";
+import icon from "../../assets/img/myicon.png";
 import { CategoryItemList } from "../molecules/CategoryItemList";
 import { WorksCarousel } from "../organisms/WorksCarousel";
-import {useCallback, useState} from "react";
+import {useState} from "react";
 import WorkCategory from "../../util/WorkCategory";
 
 export const WorksPage = () => {
@@ -11,9 +12,9 @@ export const WorksPage = () => {
   const workList = [
     {
       category: WorkCategory.MOBILE_APPS,
-      imgSrc: "",
+      imgSrc: icon,
       title: "東北Tech道場10周年イベント",
-      description: ""
+      description: "aaaaa"
     }
   ]
 
