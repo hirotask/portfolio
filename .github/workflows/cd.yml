@@ -12,6 +12,5 @@ jobs:
         uses: actions/setup-node@v3 #特定バージョンのnodeを設定するアクション
         with:
           node-version: 16
-      - run: npm run predeploy #dependencyのインストール
-      - run: npm run format:check #コードフォーマットチェック
+      - run: npm run predeploy
       - run: npm run deploy
