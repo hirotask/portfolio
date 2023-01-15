@@ -4,8 +4,14 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
+import {useCallback} from "react";
 
-export const WorksCard = ({ imgSrc, title, description, onClickAction }) => {
+export const WorksCard = ({ imgSrc, title, description, link }) => {
+
+  const onClickAction = useCallback(() => {
+    window.open(link);
+  }, [link]);
+
   return (
     <Card sx={{ minWidth: 300, maxWidth: 350, height: 450 }}>
       <CardActionArea onClick={onClickAction}>

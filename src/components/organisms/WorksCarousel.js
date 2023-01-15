@@ -29,6 +29,7 @@ export const WorksCarousel = ({workList}) => {
                             imgSrc={work.imgSrc}
                             title={work.title}
                             description={work.description}
+                            link={work.link}
                         />
                     )}
                 </Slick>
