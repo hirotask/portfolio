@@ -1,11 +1,11 @@
-import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { HomePage } from "./components/pages/HomePage";
-import { createGlobalStyle } from "styled-components";
-import normalize from "styled-normalize";
-import { AboutPage } from "./components/pages/AboutPage";
-import { WorksPage } from "./components/pages/WorksPage";
-import { ContactPage } from "./components/pages/ContactPage";
+import { AboutPage } from './components/pages/AboutPage';
+import { ContactPage } from './components/pages/ContactPage';
+import { HomePage } from './components/pages/HomePage';
+import { WorksPage } from './components/pages/WorksPage';
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { createGlobalStyle } from 'styled-components';
+import normalize from 'styled-normalize';
 
 export default function App() {
   return (
@@ -13,10 +13,10 @@ export default function App() {
       <GlobalStyle />
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/about" component={AboutPage} />
-          <Route path="/works" component={WorksPage} />
-          <Route path="/contact" component={ContactPage} />
+          <Route exact path='/' component={HomePage} />
+          <Route path='/about' component={AboutPage} />
+          <Route path='/works' component={WorksPage} />
+          <Route path='/contact' component={ContactPage} />
         </Switch>
       </BrowserRouter>
     </>
@@ -36,7 +36,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html {
-    font-family: "BIZ UDゴシック",sans-serif;
+    font-family: "BIZ UDゴシック", sans-serif;
     font-size: 18px;
     line-height: 2.0;
     color: #424242;

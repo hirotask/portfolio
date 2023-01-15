@@ -1,9 +1,9 @@
 /**
  * ヘッダーのコンポーネント
  */
+import styled from 'styled-components';
 
-import styled from "styled-components";
-import { HeaderItemList } from "../molecules/HeaderItemList";
+import { HeaderItemList } from '../molecules/HeaderItemList';
 
 export const Header = () => {
   return (

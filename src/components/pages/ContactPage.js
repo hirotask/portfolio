@@ -1,24 +1,25 @@
-import { DefaultContainer } from "../templates/DefaultContainer";
-import styled from "styled-components";
-import { MyIcon } from "../atoms/MyIcon";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import styled from 'styled-components';
+
+import { MyIcon } from '../atoms/MyIcon';
+import { DefaultContainer } from '../templates/DefaultContainer';
 
 export const ContactPage = () => {
   return (
-    <DefaultContainer title={"Contact"}>
+    <DefaultContainer title={'Contact'}>
       <Wrapper>
         <MyIcon size={300} />
         <Title>FOLLOW ME</Title>
-        <IconLink href={"https://github.com/hirotask"}>
-          <GitHubIcon sx={{ fontSize: "70px", margin: "0" }} />
+        <IconLink href={'https://github.com/hirotask'}>
+          <GitHubIcon sx={{ fontSize: '70px', margin: '0' }} />
         </IconLink>
-        <IconLink href={"https://twitter.com/Hirotask_"}>
-          <TwitterIcon sx={{ fontSize: "70px", margin: "0" }} />
+        <IconLink href={'https://twitter.com/Hirotask_'}>
+          <TwitterIcon sx={{ fontSize: '70px', margin: '0' }} />
         </IconLink>
-        <IconLink href={"https://www.instagram.com/hirotask_/?hl=ja"}>
-          <InstagramIcon sx={{ fontSize: "70px", margin: "0" }} />
+        <IconLink href={'https://www.instagram.com/hirotask_/?hl=ja'}>
+          <InstagramIcon sx={{ fontSize: '70px', margin: '0' }} />
         </IconLink>
       </Wrapper>
     </DefaultContainer>
@@ -32,7 +33,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h1`
-  font-family: "Shadows Into Light", cursive;
+  font-family: 'Shadows Into Light', cursive;
   font-size: 80px;
   font-weight: bold;
   margin: 0;

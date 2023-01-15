@@ -1,13 +1,14 @@
-import { HeaderItem } from "../atoms/HeaderItem";
-import styled from "styled-components";
+import styled from 'styled-components';
+
+import { HeaderItem } from '../atoms/HeaderItem';
 
 export const HeaderItemList = () => {
   return (
     <Wrapper>
-      <HeaderItem title="Home" link="/portfolio/" />
-      <HeaderItem title="About" link="/portfolio/about" />
-      <HeaderItem title="Works" link="/portfolio/works" />
-      <HeaderItem title="Contact" link="/portfolio/contact" />
+      <HeaderItem title='Home' link='/portfolio/' />
+      <HeaderItem title='About' link='/portfolio/about' />
+      <HeaderItem title='Works' link='/portfolio/works' />
+      <HeaderItem title='Contact' link='/portfolio/contact' />
     </Wrapper>
   );
 };

@@ -1,14 +1,16 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const CategoryItem = ({category, text, setCategoryIdx}) => {
-    return (
-        <CategoryItemText >
-            <p onClick={() => {
-                setCategoryIdx(category);
-            }}>{text}</p>
-        </CategoryItemText>
-
-    );
+export const CategoryItem = ({ category, text, setCategoryIdx }) => {
+  return (
+    <CategoryItemText>
+      <p
+        onClick={() => {
+          setCategoryIdx(category);
+        }}>
+        {text}
+      </p>
+    </CategoryItemText>
+  );
 };
 
 const CategoryItemText = styled.div`
@@ -27,7 +29,7 @@ const CategoryItemText = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    content: "";
+    content: '';
     width: 100%;
     transform-origin: left top;
     transition: 0.3s cubic-bezier(0.45, 0, 0.55, 1);

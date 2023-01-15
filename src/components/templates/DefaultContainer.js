@@ -1,26 +1,30 @@
 /**
  * すべてのページの基礎となるコンポーネント
  */
-import styled from "styled-components";
 import { useEffect } from "react";
+import styled from "styled-components";
+
+
+
 import { Header } from "../organisms/Header";
 
-export const DefaultContainer = ({ children, title }) => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
-  // ページタイトルを変更する関数
-  useEffect(() => {
-    document.title = `${title} | Hirotask Portfolio`;
-  }, [title]);
+export const DefaultContainer = ({children, title}) => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
-  return (
-    <MainWrapper>
-      <Header />
-      {children}
-    </MainWrapper>
-  );
+    // ページタイトルを変更する関数
+    useEffect(() => {
+        document.title = `${title} | Hirotask Portfolio`;
+    }, [title]);
+
+    return (
+        <MainWrapper>
+            <Header/>
+            {children}
+        </MainWrapper>
+    );
 };
 
 const MainWrapper = styled.div`

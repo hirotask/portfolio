@@ -1,7 +1,7 @@
 /**
  * Headerにある一個一個の要素
  */
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const HeaderItem = ({ title, link }) => {
   return (
@@ -19,7 +19,7 @@ const Item = styled.li`
   font-size: 48px;
   text-decoration: none;
   font-weight: bold;
-  font-family: "Shadows Into Light", cursive;
+  font-family: 'Shadows Into Light', cursive;
 `;
 
 const ItemLink = styled.a`

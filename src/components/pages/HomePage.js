@@ -1,10 +1,11 @@
-import { DefaultContainer } from "../templates/DefaultContainer";
-import { MyIcon } from "../atoms/MyIcon";
-import styled from "styled-components";
+import styled from 'styled-components';
+
+import { MyIcon } from '../atoms/MyIcon';
+import { DefaultContainer } from '../templates/DefaultContainer';
 
 export const HomePage = () => {
   return (
-    <DefaultContainer title="Home">
+    <DefaultContainer title='Home'>
       <Wrapper>
         <MyIcon size={350} />
         <Title>Hiroto Hashi</Title>
@@ -20,7 +21,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h1`
-  font-family: "Shadows Into Light", cursive;
+  font-family: 'Shadows Into Light', cursive;
   font-size: 128px;
   font-weight: bold;
   margin-left: 150px;
