@@ -2,7 +2,8 @@ import WorkCategory from "../util/WorkCategory";
 import tech10 from "../assets/img/tech10.jpg";
 import germany from "../assets/img/germany.JPG";
 import act from "../assets/img/act.jpg";
-import portfolio from "../assets/img/portfolio.png"
+import portfolio from "../assets/img/portfolio.png";
+import gakucom from "../assets/img/gakucom.png";
 
 const Works = [
     {
@@ -29,6 +30,12 @@ const Works = [
         title: "東北Tech道場10周年イベント",
         description: "『東北Tech道場』というイベントの10周年記念で、渋谷Googleオフィスにて製作中のモバイルアプリに関するプレゼンを行いました。"
     },
+    {
+        category: WorkCategory.OTHERS,
+        imgSrc: gakucom,
+        title: "『ガクコム！』リリース",
+        description: "『滝沢イノベーションチャレンジ』というイベントで、学生のためのイベント掲載サイト『ガクコム！』を製作しました。"
+    }
 
 ]
 
