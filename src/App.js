@@ -1,24 +1,29 @@
-import { AboutPage } from './components/pages/AboutPage';
-import { ContactPage } from './components/pages/ContactPage';
-import { HomePage } from './components/pages/HomePage';
-import { WorksPage } from './components/pages/WorksPage';
+import { ThemeProvider } from '@mui/material';
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
 import normalize from 'styled-normalize';
 
+import { AboutPage } from './components/pages/AboutPage';
+import { ContactPage } from './components/pages/ContactPage';
+import { HomePage } from './components/pages/HomePage';
+import { WorksPage } from './components/pages/WorksPage';
+import theme from './util/theme';
+
 export default function App() {
   return (
     <>
-      <GlobalStyle />
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <Switch>
-          <Route exact path='/' component={HomePage} />
-          <Route path='/about' component={AboutPage} />
-          <Route path='/works' component={WorksPage} />
-          <Route path='/contact' component={ContactPage} />
-        </Switch>
-      </BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
+          <Switch>
+            <Route exact path='/' component={HomePage} />
+            <Route path='/about' component={AboutPage} />
+            <Route path='/works' component={WorksPage} />
+            <Route path='/contact' component={ContactPage} />
+          </Switch>
+        </BrowserRouter>
+      </ThemeProvider>
     </>
   );
 }
