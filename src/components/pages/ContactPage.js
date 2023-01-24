@@ -73,12 +73,6 @@ export const ContactPage = () => {
   );
 };
 
-const Wrapper = styled.div`
-  text-align: center;
-  margin: 0;
-  padding: 0;
-`;
-
 const IconLink = styled.a`
   color: inherit;
   text-decoration: none;

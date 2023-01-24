@@ -1,12 +1,5 @@
 import { MenuOutlined } from '@mui/icons-material';
-import {
-  Box,
-  IconButton,
-  List,
-  ListItem,
-  Typography,
-  useTheme,
-} from '@mui/material';
+import { IconButton, List, ListItem, Typography } from '@mui/material';
 import Drawer from '@mui/material/Drawer';
 import { useCallback, useState } from 'react';
 import styled from 'styled-components';
