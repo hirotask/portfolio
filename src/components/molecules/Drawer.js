@@ -41,13 +41,13 @@ export const MyDrawer = () => {
           <List>
             {HeaderContents.map((content, idx) => {
               return (
-                <ListItem key={idx} sx={{ borderBottom: 'solid 2px white' }}>
-                  <a href={content.route}>
+                <a key={idx} href={content.route}>
+                  <ListItem key={idx} sx={{ borderBottom: 'solid 2px white' }}>
                     <Typography variant={'h4'} color={'white'}>
                       {content.title}
                     </Typography>
-                  </a>
-                </ListItem>
+                  </ListItem>
+                </a>
               );
             })}
           </List>
