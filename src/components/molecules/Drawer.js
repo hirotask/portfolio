@@ -14,7 +14,6 @@ import styled from 'styled-components';
 import HeaderContents from '../../store/HeaderContents';
 
 export const MyDrawer = () => {
-  const theme = useTheme();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDrawer = useCallback(
