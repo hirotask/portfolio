@@ -35,7 +35,7 @@ const theme = createTheme({
     },
     info: {
       main: '#000000',
-      light: '#000000',
+      light: '#5a5a5a',
       dark: '#000000',
     },
     success: {

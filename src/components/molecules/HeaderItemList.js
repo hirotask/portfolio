@@ -1,14 +1,16 @@
 import styled from 'styled-components';
 
+import HeaderContents from '../../store/HeaderContents';
 import { HeaderItem } from '../atoms/HeaderItem';
 
 export const HeaderItemList = () => {
   return (
     <Wrapper>
-      <HeaderItem title='Home' link='/portfolio/' />
-      <HeaderItem title='About' link='/portfolio/about' />
-      <HeaderItem title='Works' link='/portfolio/works' />
-      <HeaderItem title='Contact' link='/portfolio/contact' />
+      {HeaderContents.map((content, idx) => {
+        return (
+          <HeaderItem key={idx} title={content.title} link={content.route} />
+        );
+      })}
     </Wrapper>
   );
 };
