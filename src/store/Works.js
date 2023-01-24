@@ -1,4 +1,5 @@
 import act from '../assets/img/act.jpg';
+import expiration from '../assets/img/expiration.png';
 import gakucom from '../assets/img/gakucom.png';
 import germany from '../assets/img/germany.JPG';
 import portfolio from '../assets/img/portfolio.png';
@@ -45,6 +46,14 @@ const Works = [
     description:
       '『滝沢イノベーションチャレンジ』というイベントで、学生のためのイベント掲載サイト『ガクコム！』を製作しました。',
     link: 'https://www.gakucom.com/',
+  },
+  {
+    category: WorkCategory.MOBILE_APPS,
+    imgSrc: expiration,
+    title: '『賞味期限管理アプリ』リリース',
+    description:
+      '『東北Tech道場』というイベントで、Flutterを用いて『賞味期限管理アプリ』を2人で作成しました。バックエンドはFirebaseを用いています。',
+    link: 'https://play.google.com/store/apps/details?id=jp.exm.expiration_manager&pli=1',
   },
 ];
 
