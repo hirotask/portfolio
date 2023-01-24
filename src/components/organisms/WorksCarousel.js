@@ -17,7 +17,7 @@ export const WorksCarousel = ({ workList }) => {
     slidesToScroll: 2,
     adaptiveHeight: true,
     arrow: false,
-    centerPadding: 60,
+    centerPadding: 40,
   };
 
   if (workList.length >= 2) {
@@ -27,6 +27,8 @@ export const WorksCarousel = ({ workList }) => {
           {workList.map((work, idx) => (
             <WorksCard
               key={work.title + idx}
+              mediaHeight={'200'}
+              width={'450px'}
               imgSrc={work.imgSrc}
               title={work.title}
               description={work.description}
@@ -53,5 +55,4 @@ export const WorksCarousel = ({ workList }) => {
 
 const Wrapper = styled.div`
   margin-left: 40px;
-  max-width: 900px;
 `;
