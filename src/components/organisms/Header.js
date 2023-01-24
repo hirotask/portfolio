@@ -5,11 +5,12 @@ import { Box } from '@mui/material';
 import styled from 'styled-components';
 import { useMedia } from 'use-media';
 
+import { ResponsiveMin } from '../../store/Responsive';
 import { MyDrawer } from '../molecules/Drawer';
 import { HeaderItemList } from '../molecules/HeaderItemList';
 
 export const Header = () => {
-  const isWide = useMedia({ minWidth: '1100px' });
+  const isWide = useMedia({ minWidth: ResponsiveMin });
 
   return (
     <Wrapper>
