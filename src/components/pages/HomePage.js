@@ -2,12 +2,12 @@ import { Stack } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import { useMedia } from 'use-media';
 
-import { ResponsiveMin, SmartPhoneWidth } from '../../store/Responsive';
+import { ResponsiveWidth, SmartPhoneWidth } from '../../store/Responsive';
 import { MyIcon } from '../atoms/MyIcon';
 import { DefaultContainer } from '../templates/DefaultContainer';
 
 export const HomePage = () => {
-  const isWide = useMedia({ minWidth: ResponsiveMin });
+  const isWide = useMedia({ minWidth: ResponsiveWidth });
   const isPhone = useMedia({ minWidth: SmartPhoneWidth });
 
   return (
