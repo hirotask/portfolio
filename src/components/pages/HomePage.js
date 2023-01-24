@@ -1,6 +1,5 @@
 import { Stack } from '@mui/material';
 import Typography from '@mui/material/Typography';
-import styled from 'styled-components';
 
 import { MyIcon } from '../atoms/MyIcon';
 import { DefaultContainer } from '../templates/DefaultContainer';
