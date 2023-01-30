@@ -1,19 +1,19 @@
 const HeaderContents = [
   {
     title: 'Home',
-    route: '/portfolio/',
+    route: '/',
   },
   {
     title: 'About',
-    route: '/portfolio/about',
+    route: '/about',
   },
   {
     title: 'Works',
-    route: '/portfolio/works',
+    route: '/works',
   },
   {
     title: 'Contact',
-    route: '/portfolio/contact',
+    route: '/contact',
   },
 ];
 
