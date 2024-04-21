@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={inter.className}>
-        <div className="min-h-[95vh] p-[3em] my-[20px] mx-[2%] border-[20px] border-main-color border-solid">
+        <div className="md:flex items-center min-h-[95vh] px-20 my-[20px] mx-[2%] border-[20px] border-main-color border-solid">
           {children}
         </div>
       </body>
