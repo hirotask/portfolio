@@ -13,7 +13,7 @@ const Home: FC = () => {
         <img
           src={IconImage}
           alt={'This is my icon'}
-          className='sm:w-96 w-64 rounded-full object-cover'
+          className='sm:w-96 w-56 rounded-full object-cover'
         />
         <h1 className="font-['Shadows_Into_Light'] text-[80px] sm:text-[100px] font-bold sm:ml-[100px]">
           Hiroto Hashi
