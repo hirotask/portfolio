@@ -1,4 +1,4 @@
-import germanyImage from '../assets/germany.jpg'
+import germanyImage from '../assets/german.jpg'
 import actImage from '../assets/act.jpg'
 import portfolioImage from '../assets/portfolio.png'
 import expirationImage from '../assets/expiration.png'
