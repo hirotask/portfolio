@@ -1,5 +1,4 @@
 import { FC } from 'react'
-import Typography from '@mui/material/Typography'
 
 import DefaultContainer from '../../components/DefaultContainer'
 import IconImage from '../../assets/myicon.png'
@@ -41,16 +40,16 @@ const About: FC = () => {
         <div className='md:ml-12 text-lg md:text-xl'>
           <div className='mb-6'>
             {aboutme.map((msg, key) => (
-              <Typography key={key} variant='subtitle1' fontFamily='Arial'>
+              <h6 key={key} className='font-["Arial"]'>
                 {msg}
-              </Typography>
+              </h6>
             ))}
           </div>
           <div className='text-gray-600'>
             {career.map((msg, key) => (
-              <Typography key={key} fontFamily='Arial' className='mb-4'>
+              <h6 key={key} className='font-["Arial"] mb-4'>
                 {msg}
-              </Typography>
+              </h6>
             ))}
           </div>
         </div>
