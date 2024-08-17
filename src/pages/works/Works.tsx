@@ -21,7 +21,11 @@ const Works: FC = () => {
                 <div className='text-center'>
                   <p className='text-white text-lg font-bold'>{work.title}</p>
                   <small className='text-white text-m font-bold'>
-                    {work.tags} | {work.date}
+                    {work.tags !== ''
+                      ? work.date !== ''
+                        ? `${work.tags} | ${work.date}`
+                        : `${work.tags}`
+                      : ``}
                   </small>
                 </div>
               </div>
