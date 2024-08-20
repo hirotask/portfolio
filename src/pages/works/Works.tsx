@@ -1,19 +1,31 @@
-import { FC } from 'react'
+import { FC, useEffect, useState } from 'react'
 import DefaultContainer from '../../components/DefaultContainer'
-import { getWorks } from '../../store/work'
+import { getWorks, Work } from '../../store/work'
 import { Link } from 'react-router-dom'
 
 const Works: FC = () => {
+  const [works, setWorks] = useState<Work[]>([])
+
+  useEffect(() => {
+    getWorks()
+      .then((ws) => {
+        setWorks(ws)
+      })
+      .catch((err) => {
+        console.error(err)
+      })
+  }, [works])
+
   return (
     <DefaultContainer title='Works'>
       <div className='grid gap-4 md:grid-cols-2 sm:grid-cols-1'>
-        {getWorks().map((work, index) => (
+        {works.map((work, index) => (
           <div
             key={index}
             className='relative group w-full h-64 bg-gray-200 overflow-hidden'>
-            <Link to={`/works/${index}`}>
+            <Link to={`/works/${work.id}`}>
               <img
-                src={work.image}
+                src={work.thumbnail.url}
                 alt={`image-${index}`}
                 className='object-cover w-full h-full'
               />
@@ -21,8 +33,8 @@ const Works: FC = () => {
                 <div className='text-center'>
                   <p className='text-white text-lg font-bold'>{work.title}</p>
                   <small className='text-white text-m font-bold'>
-                    {work.tags !== ''
-                      ? work.date !== ''
+                    {work.tags.length > 0
+                      ? work.date != null
                         ? `${work.tags} | ${work.date}`
                         : `${work.tags}`
                       : ``}
